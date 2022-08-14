@@ -1,0 +1,119 @@
+      // nuevo css Sport /sustituye a class:moontrip
+
+      .sport-box {
+        margin-top: 20px;
+        margin-left: 30px;
+        text-align: initial;
+
+        img {
+          width: 220px;
+          padding-bottom: 1.6rem;
+        }
+
+        h2 {
+          letter-spacing: 0.1rem;
+          font-size: 3.5rem;
+          font-family: "Merriweather", serif;
+        }
+
+        .sport-box__span {
+          color: #d2003c;
+          font-size: 2rem;
+        }
+      }
+
+      @media screen and (min-width: 1px) and (max-width: 768px) {
+        header {
+          display: none;
+        }
+
+        // Inicio Mobile
+        .logo-rb-mb {
+          width: 250px;
+
+        }
+
+        .logo-rb--box {
+          display: flex;
+          justify-content: center;
+        }
+
+
+        .logo-rb--text {
+          height: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          font-family: "Montserrat", sans-serif;
+          font-size: 3rem;
+          // color: #0A141E;
+          color: #D2003C;
+
+        }
+
+        // estoy aqií 
+        .mobile-title {
+          width: 100%;
+          position: absolute;
+          top: 260px;
+          text-align: right;
+          padding-right: 2em;
+
+          h2 {
+            // color: #0A141E;
+            color: #D2003C;
+            font-family: "Merriweather", serif;
+          }
+
+          p {
+            // color: #0A141E;
+            color: #D2003C;
+            font-size: 2rem;
+          }
+
+        }
+
+
+        .btn-principal {
+          height: 110px;
+        }
+
+        .btn-box-mb-cero {
+          height: 110px;
+          background-color: #F2B90C;
+        }
+
+        .btn-box-cero__mb-one {
+          height: 110px;
+          background-color: #F28B0C;
+        }
+
+        .btn-box-cero__mb-two {
+          height: 110px;
+          background-color: #1B5E96;
+        }
+
+        .sport-box {
+          display: none;
+        }
+
+        .cta-main {
+          display: none;
+        }
+
+        // footer {
+        //   background-color: #4d4c4c;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+
+        //   padding: 20px 0;
+        //   font-size: 1rem;
+
+        //   p {
+        //     color: rgb(194, 189, 189);
+        //   }
+        // }
+
+      }

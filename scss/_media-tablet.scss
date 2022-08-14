@@ -1,0 +1,192 @@
+//  md tablet {min-width:769px max-width:1023px}
+@media screen and (min-width:769px) and (max-width:1023px) {
+
+  .header-mobile {
+    display: none;
+  }
+
+  .mobil-btn-principal {
+    display: none;
+  }
+
+  .mobile-title {
+    display: none;
+  }
+
+  .body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    grid-template-rows: 430px 90px 200px 200px 1fr;
+    position: relative;
+    background-image: url(../assets/images/bg-sports-mkt-event.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #0a151f;
+
+    // child one
+    .header {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      position: relative;
+
+      .header--rock-img {
+        width: 100%;
+        height: 100%;
+        @include img(no-repeat, cover, cover, top center);
+      }
+
+      .main-title {
+        position: absolute;
+        width: 150%;
+        top: 280px;
+        left: 120px;
+        font-size: 5rem;
+        line-height: 6rem;
+        // letter-spacing: 0.3rem;
+      }
+
+      .header--logo {
+        position: absolute;
+        top: 40px;
+        left: 100px
+      }
+
+      .header--logo:hover {
+        -webkit-transform: rotate(360deg);
+        transition: 2s ease-in-out;
+      }
+
+      .cta-header {
+        width: auto;
+        height: 160px;
+        position: absolute;
+        top: 360px;
+        left: 120px;
+        /* padding-left: 1.5em; */
+        //   background-color: $bg-button;
+        @include caja-flex(left, center, row);
+
+        // MAIN -- HIJO2 (boton <a>) -- sub-hijo1
+        .btn-principal {
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          margin-top: 1rem;
+          padding: 1em 2em;
+          transition: transform 100ms;
+          font-size: 2.2rem;
+          @include caja-flex(left, center, row);
+
+          .btn-principal--icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            color: white;
+          }
+        }
+
+        .btn-principal:hover {
+          transform: scale(1.1);
+        }
+      }
+
+    }
+
+    // child two
+    .box-cta {
+      grid-column: 2/4;
+      grid-row: 3/4;
+      width: auto;
+
+      z-index: 10;
+
+      .box-cta-buttons {
+        display: flex;
+
+      }
+
+      .btn-box-one,
+      .btn-box-two {
+        width: 50%;
+      }
+
+    }
+
+
+    // child three
+
+    .main {
+      grid-column: 2/4;
+      grid-row: 1/3;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 90px 200px 250px 1fr;
+
+      .rocket-container {
+        grid-column: 1/2;
+        grid-row: 2/5;
+        display: block;
+        margin: 0;
+
+        .rocket-container--bg {
+          height: 100%;
+          width: 100%;
+          @include img(no-repeat, cover, cover, top center);
+        }
+
+      }
+
+      .cta-main {
+        display: none;
+      }
+
+
+      // nuevo css Sport /sustituye a class:moontrip
+
+      .sport-box {
+
+
+        h2 {
+          font-size: 3rem;
+          font-family: "Montserrat", sans-serif;
+          // color: #d2003c;
+        }
+      }
+
+
+      .moontrip {
+        background-color: $opacity-bg;
+        padding: 3em;
+
+        .moontrip-item-1 {
+          width: 120px;
+        }
+
+        .moontrip--item-2,
+        .moontrip--item-4,
+        .moontrip--item-5 {
+          font-family: "Merriweather", serif;
+        }
+
+        .moontrip--item-3 {
+          display: block;
+          width: 110px;
+          margin: 0;
+          height: 0.2rem;
+          color: $line-color;
+          background-color: $line-color;
+        }
+
+      }
+
+      .surface-box {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
