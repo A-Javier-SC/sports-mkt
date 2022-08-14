@@ -483,17 +483,20 @@ h3 {
   .mobile-title {
     width: 100%;
     position: absolute;
-    top: 260px;
+    top: 200px;
     text-align: right;
     padding-right: 2em;
   }
   .mobile-title h2 {
     color: white;
     font-family: "Merriweather", serif;
+    line-height: 28px;
   }
   .mobile-title p {
     color: white;
     font-size: 2rem;
+    line-height: 18px;
+    font-size: 1.6rem;
   }
 
   .btn-principal {
